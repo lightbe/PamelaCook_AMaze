@@ -1,22 +1,12 @@
-# A Maze Starter Project
+# A Maze - Unity VR Project
 
-This project is part of [Udacity](https://www.udacity.com "Udacity - Be in demand")'s [VR Developer Nanodegree](https://www.udacity.com/course/vr-developer-nanodegree--nd017). This project is being submitted for iOS with the minimum version of 10.0. Testing is being done using an iPhone 6 Plus running the latest stable version of iOS 11.
+"A Maze" is a fun virtual reality game created by Pamela Cook of [LightBe Corp](https://www.lightbe.com/). You will navigate through a medieval scene using waypoints with the goal of opening the temple door at the opposite end of the scene. However there are tasks you must complete before opening the door.
 
-To play: Read the instruction text box. Click the instruction text box to begin. Navigate the maze by clicking the green waypoints along the way. There are seven coins that can be collected. The goal is to unlock and open the temple door. The key must be collected and the door clicked to open the door. To start over click the green text above the treasure chest.
+To play: Read the instruction text box. Click the instruction text box to begin. Navigate the maze by clicking the green waypoints along the way. There are seven coins and one key that can be collected. The key and all the coins must be collected before you will be able to "unlock" and open the door. Click the door to open it. If you click the door before collecting the key and all the coins a message displays with what needs to be done with the door remaining closed. To start over after succcessfully opening the door click the green text above the treasure chest.
 
-## Versions
-- Unity 2017.2.0f3
-- GVR Unity SDK v1.70.0
-
-## Observation(s)
-- I defined Key.keyCollected and set it to true to fulfill the rubric requirement. However when I run the maze I see the following warning message in the console: **Assets/UdacityVR/Scripts/Key.cs(10,10): warning CS0414: The private field `Key.keyCollected' is assigned but its value is never used**. 
+This game was created using Unity 2017.2.0f3 and GoogleVR SDK 1.70.0 for iOS with the minimum version of 10.0. This project has been executed on an iPhone 6 Plus running the latest stable version of both iOS 11 and iOS 12.
 
 ## Credits
-- Audio of crickets chirping created by [CGEffex](https://freesound.org/people/CGEffex/) was downloaded from [Freesound](https://freesound.org/), a collaborative database of Creative Commons Licensed sounds. The WAV file was converted to MP3 to help with optimization.
+- Audio of crickets chirping created by [CGEffex](https://freesound.org/people/CGEffex/) was downloaded from [Freesound](https://freesound.org/), a collaborative database of Creative Commons Licensed sounds.
 
-## Extras
-- Added a StartGame prefab with instructions on how to play.
-- Limit the raising of the door in the Door script.
-- Added two float variables to the Waypoint script to set the camera height for all Waypoints in method **Click()** to limit the lifting of the head. One is used to control the height of the camera for all waypoints except the one on the doorsteps. The other is added to first variable for a higher camera height at the waypoint on the doorsteps.
-- Added a Timer script which displays the elapsed time, the coin count and when the Key is collected. The Coin script increments the coin count when collected.
-- Display message **GET THE KEY!** for 64 frames (approx. 2 seconds) when a locked door is clicked.
+For more information on Pamela Cook, see her [*LinkedIn* profile](https://www.linkedin.com/in/pamelacooklightbecorp).
